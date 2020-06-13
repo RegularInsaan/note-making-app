@@ -23,7 +23,7 @@ yargs.command({
             type: 'string'
         },
     },
-    handler: (argv) => {
+    handler: function(argv){
         notes.addNote(argv.title, argv.body);
     }
 })
